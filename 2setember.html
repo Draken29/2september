@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37</title>
+    <style>
+        :root{
+            --blue:#0000ff63;
+            --white:white;
+        }
+        body{
+            background-color: var(--blue);
+        }
+        p{
+            font-size: 50px;
+            color: var(--white);
+        }
+        ol li{
+            counter-increment:gh+1;
+            list-style: none;
+        }
+        ol li::before{
+            content:counter(gh)':';
+        }
+        ol{
+            counter-reset: gh +1;
+        }
+    </style>
+</head>
+<body>
+    <p>learn the a b c d  and learn the 1 2 3 4 we can learn the html and css and i can learn php </p> 
+    <ol>
+        <li>learn css in arabic with coder shiyar</li>
+        <li>learn javascript arabic with coder shiyar</li>
+        <li>learn php arabic with coder shiyar</li>
+        <li>learn sql in arabic with coder shiyar</li>
+        <li>learn python in arabic with coder shiyar</li>
+    </ol>
+</body>
+</html>
